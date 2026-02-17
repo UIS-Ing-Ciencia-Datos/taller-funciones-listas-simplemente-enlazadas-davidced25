@@ -30,3 +30,17 @@ class ListaSE:
 		else:
 			nuevo_nodo.siguiente = self.cabeza
 			self.cabeza = nuevo_nodo
+
+#agregar al final
+def agregarfin(self, data):
+    nuevo_nodo = Nodo(data)
+    if self.cabeza is None:
+        self.cabeza = nuevo_nodo
+        return
+    else:
+        actual = self.cabeza
+        while actual.siguiente is not None:
+            actual = actual.siguiente
+        actual.siguiente = nuevo_nodo
+ 
+
